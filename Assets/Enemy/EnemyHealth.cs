@@ -33,7 +33,7 @@ public class EnemyHealth : MonoBehaviour
         if (_currentHitPoint <= 0)
         {
             _enemy.RewardGold();
-            _currentHitPoint += _difficultRamp;
+            _maxHitPoints += _difficultRamp;
             gameObject.SetActive(false);
         }
     }
